@@ -1,14 +1,9 @@
 ---
-title: "Configuring Yabai as a Tiling Window Manager
-  on macOS"
+title: "Configuring Yabai as a Tiling Window Manager on macOS"
 author: "Ronald G. Thomas"
 date: "2025-06-20"
 categories: [macos, shell]
-description: >
-  I did not really know how much faster a tiling
-  window manager could make my daily workflow until
-  I configured yabai with keyboard shortcuts and
-  stopped reaching for the mouse.
+description: "I did not really know how much faster a tiling window manager could make my daily workflow until I configured yabai with keyboard shortcuts and stopped reaching for the mouse."
 image: "media/images/hero.png"
 document-type: "blog"
 draft: true
