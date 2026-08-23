@@ -54,7 +54,7 @@ windows arrange themselves automatically.
 
 More formally, we document an optional addition to the
 Applications layer (Layer 10) of the Workflow Construct
-described in [post 52](/posts/52-workflow-construct/). A tiling
+described in [A Workflow Construct for the Modern Data Scientist](../wf-construct-overview-anchor/). A tiling
 window manager is not load-bearing for the construct: nothing
 in the construct's other layers requires a tiled desktop, and
 many practitioners get equivalent productivity from the macOS
