@@ -15,6 +15,62 @@ cluster: workflow-construct
 cluster-order: 9
 ---
 
+<!-- ============================================================================
+AUTHOR PROVIDES — concrete inputs the blogger must supply
+
+YAML FRONT MATTER
+  [x] title           — filled in
+  [x] date            — 2025-06-20
+  [x] categories      — macos, shell
+  [x] description     — filled in
+  [ ] image           — references media/images/hero.png; hero.jpg exists on
+                         disk and is unused (see IMAGES below)
+  [ ] draft: false    — still true
+
+NARRATIVE INPUTS
+  [x] Hook sentence   — mouse-reaching frustration before yabai
+  [x] Pain point      — constant manual window dragging and resizing
+  [x] Motivations     — 5 bullets
+  [x] Objectives      — 4 numbered goals
+  [x] What is a Tiling Window Manager? — definition + bookshelf analogy + BSP example
+  [x] Things to Watch Out For — 5 gotchas
+  [x] Lessons Learnt  — 4 conceptual + 4 technical + 4 gotcha bullets
+  [x] Limitations     — 6 bullets
+  [x] Opportunities   — 6 numbered next-step extensions
+  [x] Wrapping Up     — conclusion + 4 emphasised points
+  [x] See Also        — related posts + key resources
+
+CONFIGURATION DELIVERABLES
+  [x] Complete `.yabairc` shown inline in body
+  [x] Complete `.skhdrc` shown inline in body (all keybinding sections)
+  [ ] `.yabairc` / `.skhdrc` as standalone files under analysis/configs/ —
+      not present; Reproducibility section's `cp yabairc ~/.yabairc` step
+      has no source file to copy from
+  [x] Keybinding reference tables per section
+
+VERSION MATRIX
+  [x] OS + version tested — macOS Ventura 13.x / Sonoma 14.x
+  [x] Tool versions pinned — yabai 6.x, skhd 0.3.x
+  [ ] Date of last verification — not stated
+
+IMAGES (4 total: hero + 3 ambiance, all in analysis/media/images/)
+  [ ] Hero image (80% width)        — body references hero.png; hero.jpg is
+                                       the unreferenced final on disk
+  [ ] Ambiance image 1 (after Objectives) — body uses terminal-logo.png here,
+                                       not an ambiance1 image; ambiance1.jpg/png
+                                       exist on disk but are unused
+  [ ] Ambiance image 2 (after Installation) — references ambiance2.png;
+                                       ambiance2.jpg exists and is unused
+  [ ] Ambiance image 3 (before Lessons Learnt) — references ambiance3.png;
+                                       ambiance3.jpg exists and is unused
+  [ ] media/images/README.md — currently documents unrelated generic
+      coffee-photo placeholders, not this post's actual images
+
+CONTACT & METADATA
+  [x] Author name in YAML matches site author
+  [x] Social links in Let's Connect present
+============================================================================ -->
+
 ![A clean desktop workspace with tiled application
 windows arranged in a grid layout.
 ](media/images/hero.png){.img-fluid width=80%
@@ -757,6 +813,56 @@ I would enjoy hearing from you if:
 - You have questions about anything in this
   tutorial.
 - You just want to say hello and connect.
+
+<!-- ============================================================================
+PRE-PUBLISH QA CHECKLIST: verify each item BEFORE setting draft: false
+
+[ ] YAML
+    [x] title, date, categories, description, image filled in
+    [x] document-type: 'blog'
+    [ ] draft: false
+
+[x] Narrative complete (no [bracketed] placeholders remaining)
+    [x] grep '\[' index.qmd returns only legitimate code/links
+
+[ ] Configuration artifacts present and tested
+    [x] Complete .yabairc shown and explained inline
+    [x] Complete .skhdrc shown and explained inline, by keybinding category
+    [ ] .yabairc / .skhdrc committed as standalone files so the
+        Reproducibility section's `cp yabairc ~/.yabairc` step actually works
+    [ ] Installer/config tested end-to-end on a fresh machine
+
+[ ] Things to Watch Out For
+    [x] At least 5 gotchas, each with symptom and fix
+
+[ ] Visual design
+    [ ] 1 hero image (width=80%, fig-align=center) — currently points at
+        hero.png; hero.jpg is the unreferenced final image on disk
+    [ ] 3 ambiance images (.img-fluid only): body uses terminal-logo.png in
+        the ambiance-1 slot and references ambiance2.png / ambiance3.png
+        rather than the .jpg finals present in media/images/
+    [ ] media/images/README.md attributes every image actually used (current
+        file documents unrelated placeholder coffee photos)
+
+[ ] Content quality
+    [x] Zero emoji
+    [x] Zero em dashes
+    [x] Single quotes in prose
+    [ ] 78-character line wrap throughout (several long code/table lines
+        exceed 78 chars, e.g. skhd command blocks)
+
+[ ] Reproducibility
+    [x] Version matrix filled in (OS, yabai, skhd versions)
+    [ ] Version matrix 'Last verified' field filled in
+    [ ] Config files committed under analysis/configs/ (or equivalent) so the
+        documented copy step is reproducible
+
+[ ] Render verification
+    [ ] quarto render produces clean HTML with no warnings
+    [ ] PDF renders without overflow or missing images
+    [ ] Hero image displays in /blog/ listing card
+    [ ] Internal links resolve
+============================================================================ -->
 
 ## Related posts in this cluster
 
